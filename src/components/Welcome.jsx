@@ -1,11 +1,15 @@
-import Image from 'react-bootstrap/Image';
+//import Image from 'react-bootstrap/Image';
+import { Container } from 'react-bootstrap';
 
 const Welcome = () => {
   return (
-    <Image
-      src="https://img.hicharis.net/unsafe/640x272/http%3A%2F%2Fd3m7so2s2yecjy.cloudfront.net%2Fusers%2FUS70842163Bk34SaOF%2F201801_BylFDwYErf.jpeg"
+    <Container
+      className="d-flex bg-dark text-light align-items-center justify-content-center"
       fluid
-    />
+      style={{ height: '200px' }}
+    >
+      <h1 className="text-center py-3">WELCOME TO MY ONLINE BOOKSHOP </h1>
+    </Container>
   );
 };
 

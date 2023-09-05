@@ -8,13 +8,13 @@ const AllTheBooks = () => {
         {menu.map((el, index) => (
           <Col key={`el-${index}`} className="my-3" xs={3}>
             <Card className="shadow-lg">
-              <Card.Img variant="top" src={el.img} />
+              <Card.Img variant="top" src={el.img} style={{ height: '300px', objectFit: 'contain' }} />
               <Card.Body>
-                <Card.Title>Card Title</Card.Title>
+                <Card.Title>{el.title}</Card.Title>
                 <Card.Text>
                   Some quick example text to build on the card title and make up the bulk of the card's content.
                 </Card.Text>
-                <Button variant="danger">show more</Button>
+                <Button variant="danger">{el.price}</Button>
               </Card.Body>
             </Card>
           </Col>
